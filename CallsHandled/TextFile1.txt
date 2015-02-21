@@ -1,0 +1,5 @@
+﻿TODO:
+
+start timer when create get action is called
+create post action includes all logic in HomeController.txt
+use git to manage version control
