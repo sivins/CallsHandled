@@ -4,19 +4,19 @@ using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace CallsHandled.Models
 {
     public class Call
     {
-
         [Key]
         public int ID { get; set; }
 
         //duration of call in seconds
         public int Seconds { get; set; }
 
-        //will be dropdown or radio, no need for validation
+        [Required]
         public string Resolution { get; set; }
 
         //flag for followup

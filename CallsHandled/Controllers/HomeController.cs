@@ -14,7 +14,20 @@ namespace CallsHandled.Controllers
     public class HomeController : Controller
     {
         private CallContext db = new CallContext();
-        private Stopwatch timer = new Stopwatch();
+
+        private DateTime TimerStart { get; set; }
+        private DateTime TimerStop { get; set; }
+
+        /*
+        private SelectList ResolutionList = new SelectList(new List<SelectListItem>() { 
+                new SelectListItem() { Value="Resolved", Text = "Resolved" },
+                new SelectListItem() { Value="Referred", Text = "Refer to IT/Vendor" },
+                new SelectListItem() { Value="Ticket", Text = "Ticket" },
+                new SelectListItem() { Value="Follow-Up", Text = "Follow-Up" },
+                new SelectListItem() { Value="Escalated", Text = "Escalate to Supervisor" },
+                new SelectListItem() { Value="Dropped", Text = "Call Dropped" }
+            });
+*/
 
         // GET: Home
         public ActionResult Index()
@@ -40,6 +53,7 @@ namespace CallsHandled.Controllers
         // GET: Home/Create
         public ActionResult Create()
         {
+            Timer.TimerStart = DateTime.Now;
             return View();
         }
 
@@ -50,6 +64,11 @@ namespace CallsHandled.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Seconds,Resolution,Flag,Details,Timestamp")] Call call)
         {
+            Timer.TimerStop = DateTime.Now;
+            TimeSpan difference = Timer.TimerStop - Timer.TimerStart;
+            call.Seconds = difference.Seconds;
+            call.Timestamp = DateTime.Now;
+
             if (ModelState.IsValid)
             {
                 db.Calls.Add(call);

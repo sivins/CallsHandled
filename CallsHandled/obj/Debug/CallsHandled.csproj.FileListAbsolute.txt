@@ -55,3 +55,5 @@ c:\users\seani_000\documents\visual studio 2013\Projects\CallsHandled\CallsHandl
 c:\users\seani_000\documents\visual studio 2013\Projects\CallsHandled\CallsHandled\obj\Debug\CallsHandled.pdb
 c:\users\seani_000\documents\visual studio 2013\Projects\CallsHandled\CallsHandled\obj\Debug\CallsHandled.Migrations.Initial.resources
 c:\users\seani_000\documents\visual studio 2013\Projects\CallsHandled\CallsHandled\obj\Debug\CallsHandled.csproj.GenerateResource.Cache
+C:\Users\seani_000\Documents\Visual Studio 2013\Projects\CallsHandled\CallsHandled\obj\Debug\CallsHandled.Migrations.Validations.resources
+C:\Users\seani_000\Documents\Visual Studio 2013\Projects\CallsHandled\CallsHandled\obj\Debug\CallsHandled.Migrations.Validations1.resources
