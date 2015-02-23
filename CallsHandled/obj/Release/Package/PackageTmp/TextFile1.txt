@@ -1,0 +1,5 @@
+﻿TODO:
+fix edit view
+clean up index view
+tie data to user
+quality bools?

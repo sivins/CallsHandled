@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-CallsHandled-20150220072138.mdf;Initial Catalog=aspnet-CallsHandled-20150220072138;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\seani_000\\Documents\\Visual\ Studio\ 2013\\Projects\\CallsHandled\\CallsHandled\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="CallsHandled.Models.CallContext-Web.config Connection String" description="CallsHandled.Models.CallContext Connection String used in web.config by the application to access the database." defaultValue="CallsHandled.Models.CallContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\seani_000\\Documents\\Visual\ Studio\ 2013\\Projects\\CallsHandled\\CallsHandled\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CallsHandled.Models.CallContext']/@connectionString" />
+  </parameter>
+  <parameter name="CallsHandled.Models.CallContext_DatabasePublish-Web.config Connection String" description="CallsHandled.Models.CallContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="CallsHandled.Models.CallContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\seani_000\\Documents\\Visual\ Studio\ 2013\\Projects\\CallsHandled\\CallsHandled\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CallsHandled.Models.CallContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

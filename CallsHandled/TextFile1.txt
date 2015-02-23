@@ -1,5 +1,7 @@
 ﻿TODO:
+WHY CANT I DEPLOY IT!?!?!?
 fix edit view
 clean up index view
 tie data to user
+order by timestamp
 quality bools?
